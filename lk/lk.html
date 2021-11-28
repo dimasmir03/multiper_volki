@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>
+    Личный кабинет
+  </title>
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="background-black">
+  <header class="header">
+    <div class="header__text">Личный кабинет</div>
+    <nav class="header__menu menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span class="menu__icon"></span>
+      </label>
+      <div class="menu__box">
+        <a class="menu__item" href="">Карта</a>
+        <a class="menu__item" href="./main.html">Поиск пути</a>
+        <a class="menu__item" href="./rasp.html">Информация о поездке</a>
+      </div>
+    </nav>
+  </header>
+  <div class="block">
+    <div class="block__photo"></div>
+    <p class="block__text">Бабушкин<br>Роман Владимирович</p>
+  </div>
+  <div class="block">
+    <p class="block__header">Документы</p>
+    <div class="help__box">
+      <p class="block__text_left">Добавить фото паспорта:</p>
+      <form id="upload-container" method="POST">
+        <div>
+          <input id="file-input" type="file" name="file" multiple>
+          <label for="file-input" class="block__button">Выберите файл</label>
+          <input type="submit" value="Отправить" class="block__input">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="block">
+    <p class="block__header">Завершенные поездки:</p>
+    <div class="block2" id="brus">
+      <div class="block2__desc"> 
+        <div class="block2__desc_text">Пункт отправление: <p class="block2__desc_date">Сухой</p></div>
+        <div class="block2__desc_text">Пункт назначения: <p class="block2__desc_date">Красноярск, ул. Мечников</p></div>
+        <div class="block2__desc_text">Дата поездки: <p class="block2__desc_date">12.07.2021</p></div>
+      </div>
+    </div>
+    <div class="block2" id="ivan">
+      <div class="block2__desc"> 
+        <div class="block2__desc_text">Пункт отправление: <p class="block2__desc_date">Петряшино</p></div>
+        <div class="block2__desc_text">Пункт назначения: <p class="block2__desc_date">4122 км</p></div>
+        <div class="block2__desc_text">Дата поездки: <p class="block2__desc_date">01.02.2020</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="footer">
+  </footer>
+</body>
+</html>

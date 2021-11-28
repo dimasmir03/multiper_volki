@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="./fonts.css">
+   <title>Информация о поездке</title>
+</head>
+<body>
+   <header class="header">
+    <div class="header__text">Поиск пути</div>
+    <nav class="header__menu menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span class="menu__icon"></span>
+      </label>
+      <div class="menu__box">
+        <a class="menu__item" href="">Карта</a>
+        <a class="menu__item" href="./lk.html">Личный кабинет</a>
+        <a class="menu__item" href="./main.html">Поиск пути</a>
+      </div>
+    </nav>
+  </header>
+   <div class="background-black">
+      <div class="block">
+         {{#if jd.length}}
+         <div class="train"></div>
+         <h3 class="textR">Железная дорога:</h3>
+         <h3 class="textR">Путь по железной дороге составит <p class="textB">{{jd.length}}, {{jd.time}}</p> и будет стоить <p class="textB">{{jd.cost}} руб</p></h3>
+         {{else}}
+         <div class="train"></div>
+         <h3 class="textR">По электричкам не доехать</h3>
+         {{/if}}
+
+         {{#if car.length}}
+         <div class="auto"></div>
+         <h3 class="textR">Путь на авто:</h3>
+         <h3 class="textR">В автомобиле дорога составит <p class="textB">{{car.length}}, {{car.time}}</p> и будет стоить <p class="textB">{{car.cost}} руб</p></h3>
+         {{else}}
+         <div class="auto"></div>
+         <h3 class="textR">На машине не доехать</h3>
+         {{/if}}
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <link rel="stylesheet" href="./fonts.css">
+  <title>
+    Поиск пути
+  </title>
+</head>
+<body>
+  <div class="background-black">
+  <header class="header">
+    <div class="header__text">Поиск пути</div>
+    <nav class="header__menu menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span class="menu__icon"></span>
+      </label>
+      <div class="menu__box">
+        <a class="menu__item" href="">Карта</a>
+        <a class="menu__item" href="./lk.html">Личный кабинет</a>
+        <a class="menu__item" href="./rasp.html">Информация о поездке</a>
+      </div>
+    </nav>
+  </header>
+  <div class="block">
+    <form method="post" id="form">
+      <p class="text">Адрес отправления</p>
+      <div class="helpbox"><input class="input" id="start" type="text" name="pointa" placeholder="Адрес подачи"><div class="btn" id="button1">Выбрать на карте</div></div>
+      <p class="text">Адрес назначения</p>
+      <div class="helpbox" id="before"><input class="input" id="end" type="text" name="pointb" placeholder="Адрес назначения"><div class="btn" id="button2">Выбрать на карте</div></div>
+      <div id="addend">Добавить промежуточный пункт</div>
+      <p class="text">Время подачи транспорта</p>
+      <p class="choose">
+          <select name="time" action="/query" class="input">
+            <option selected="selected">-</option>
+            <option value="0">00:00</option>
+            <option value="1">01:00</option>
+            <option value="2">02:00</option>
+            <option value="3">03:00</option>
+            <option value="4">04:00</option>
+            <option value="5">05:00</option>
+            <option value="6">06:00</option>
+            <option value="7">07:00</option>
+            <option value="8">08:00</option>
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="22">22:00</option>
+            <option value="23">23:00</option>
+            <option value="24">24:00</option>
+          </select>
+        </p>
+        
+      <p class="text">Цель поездки</p>
+      <input class="input" id="goal" type="text" name="value" placeholder="Цель поездки">
+      <div class="btn1"><button type="submit" class="btn">Отправить</button></div>
+    </form>
+  </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
