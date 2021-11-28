@@ -131,7 +131,7 @@ function bla(body) {
    console.log(parseInt(datas.car.time_c[0]+datas.car.time_c[1]));
    wayCostc = parseInt(datas.car.length_c[0]+datas.car.length_c[1]) * tariff
    timeCostc = parseInt(datas.car.time_c[0]+datas.car.time_c[1]) * pay
-   body.pointa = "Платинум Арена"
+   
    
    
 
